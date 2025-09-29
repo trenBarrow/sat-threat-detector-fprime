@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="SatProto" kind="active">
+  <telemetry><channel id="0x6000" name="Heartbeat" data_type="U32"/></telemetry>
+  <commands><command opcode="0x6100" mnemonic="PING" kind="sync"/></commands>
+  <events><event id="0x6200" name="Pinged" severity="ACTIVITY_HI"/></events>
+</component>

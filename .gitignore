@@ -1,0 +1,13 @@
+build*/
+*.o
+*.pyc
+__pycache__/
+*.swp
+.DS_Store
+.vscode/
+.env
+.venv/
+frames.csv
+train_report.txt
+detector_main
+.lock

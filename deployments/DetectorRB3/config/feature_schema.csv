@@ -1,0 +1,1 @@
+ts,bytes_per_s,pkts_per_s,iat_p50_ms,iat_p95_ms,retrans_pct,ttl_var,win_var,flow_delta,fivetuple_changes,opcode,subsystem,mode,param_bucket,seq_gap,resp_delay_ms,ack_flag_rate,guard_violation_bits

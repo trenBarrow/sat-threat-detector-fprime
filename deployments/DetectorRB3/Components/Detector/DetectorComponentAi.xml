@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="Detector" kind="active">
+  <import_component_type>fprime/LLPorts/Buffer/Buffer</import_component_type>
+  <ports>
+    <port name="FeatureIn" data_type="Fw::Buffer" role="recv"/>
+    <port name="LogText" data_type="Fw::LogSeverity" role="log"/>
+  </ports>
+  <telemetry>
+    <channel id="0x7000" name="RiskScore" data_type="F32"/>
+  </telemetry>
+  <events>
+    <event id="0x7100" name="RiskAlert" severity="WARNING_HI">
+      <arg name="Risk" type="F32"/>
+      <arg name="Reason" type="string"/>
+    </event>
+  </events>
+  <commands>
+    <command opcode="0x7200" mnemonic="DET_LOAD" kind="sync">
+      <arg name="Reload" type="U32"/>
+    </command>
+  </commands>
+</component>
